@@ -1,0 +1,50 @@
+# ============================================================
+# Mini SOC — Git Ignore
+# Exclude sensitive data, private keys, heavy binaries & caches
+# ============================================================
+
+# Credentials, Keys & Certificates
+*.pem
+*.key
+*.pfx
+*.p12
+*.cer
+*.crt
+*.csr
+*.kdbx
+*.ovpn
+secrets/
+credentials/
+.env
+.env.*
+!.env.example
+
+# Wazuh Docker local deployment & volumes
+wazuh-docker/
+
+# Installer & heavy binary executables (downloaded dynamically via scripts)
+tools/*.exe
+tools/*.zip
+tools/*.msi
+tools/*.iso
+tools/*.tar.gz
+*.exe
+*.msi
+*.zip
+
+# Logs, backups, and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+*.lock
+
+# OS & Editor generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.suo
+*.user
